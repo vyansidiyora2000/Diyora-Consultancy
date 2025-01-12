@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1a202c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2d3748;
+}
+
+a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
