@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const AnimatedStat = ({ endValue, suffix = '', duration = 2000 }) => {
+const AnimatedStat = ({ endValue, suffix = '', duration = 6000 }) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
