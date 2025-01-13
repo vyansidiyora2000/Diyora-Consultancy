@@ -68,10 +68,10 @@ const Stats = () => {
     return (
         <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
             <div className="container mx-auto px-4">
-                <div className="flex justify-between items-stretch">
+                <div className="flex flex-wrap justify-between items-stretch">
                     {stats.map((stat, index) => (
-                        <div key={index} className="flex items-center group">
-                            <div className="text-center px-8 py-6 rounded-2xl hover:bg-amber-50 transition-all duration-300">
+                        <div key={index} className="flex items-center group w-full sm:w-1/2 lg:w-1/4 mb-8">
+                            <div className="text-center px-8 py-6 rounded-2xl hover:bg-amber-50 transition-all duration-300 w-full">
                                 <div className="mb-3 group-hover:transform group-hover:scale-105 transition-transform duration-300">
                                     <AnimatedStat 
                                         endValue={stat.number} 
@@ -86,7 +86,7 @@ const Stats = () => {
                                 </p>
                             </div>
                             {index < stats.length - 1 && (
-                                <div className="h-20 w-px bg-gradient-to-b from-amber-200 via-amber-300 to-amber-200" />
+                                <div className="hidden sm:block h-20 w-px bg-gradient-to-b from-amber-200 via-amber-300 to-amber-200 mx-4" />
                             )}
                         </div>
                     ))}
