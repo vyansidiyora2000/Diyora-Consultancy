@@ -1,59 +1,76 @@
 import React from 'react';
-import { BarChart2, TrendingUp, FileText, PiggyBank } from 'lucide-react';
+import { Landmark, Home, Building, Wallet, Package, House } from 'lucide-react'; // Replace Bank with House
 
 const services = [
     {
-        title: 'Financial Planning',
-        description: 'Comprehensive financial planning services to help you achieve your financial goals.',
-        icon: <BarChart2 className="w-8 h-8 text-brown-600" />,
-        features: ['Budget Planning', 'Debt Management', 'Financial Goals']
+        title: 'Education Loan',
+        description: 'Education loans available for higher studies in India & abroad. We have 15+ total lenders as government banks, private banks & NBFCs & international lenders.',
+        icon: <Landmark className="w-8 h-8 text-brown-600" />,
+        features: ['Higher Studies in India', 'Study Abroad', 'Loan Balance Transfer']
     },
     {
-        title: 'Investment Advisory',
-        description: 'Expert advice on investment strategies tailored to your risk tolerance and objectives.',
-        icon: <TrendingUp className="w-8 h-8 text-brown-600" />,
-        features: ['Portfolio Management', 'Risk Assessment', 'Market Analysis']
+        title: 'Home Loan',
+        description: 'Avail Loan for purchasing a new home, renovation of existing home, built home on own plot, purchase a plot, Extend current home.',
+        icon: <Home className="w-8 h-8 text-brown-600" />,
+        features: ['New Home Purchase', 'Home Renovation', 'Plot Purchase']
     },
     {
-        title: 'Tax Consulting',
-        description: 'Professional tax consulting services to optimize your tax situation and ensure compliance.',
-        icon: <FileText className="w-8 h-8 text-brown-600" />,
-        features: ['Tax Planning', 'Compliance Support', 'Deduction Optimization']
+        title: 'Business Loan',
+        description: 'Grow your Business by giving it Financial boost. Loan Like Term Loans, MSME, Machinery Loans, Equipment Finance fall under Business Category.',
+        icon: <Building className="w-8 h-8 text-brown-600" />,
+        features: ['Term Loans', 'MSME Loans', 'Equipment Finance']
     },
     {
-        title: 'Retirement Solutions',
-        description: 'Guidance on retirement planning to secure your financial future.',
-        icon: <PiggyBank className="w-8 h-8 text-brown-600" />,
-        features: ['Retirement Planning', 'Pension Advice', 'Investment Strategies']
+        title: 'Personal Loan',
+        description: 'Complete your any legitimate financial need with Least Documentation. You can choose based on your need and repay as soon as you can.',
+        icon: <Wallet className="w-8 h-8 text-brown-600" />,
+        features: ['Instant Personal Loan', 'Short-Term Loan', 'Personal Loan Top-Up']
     },
+    {
+        title: 'Mortgage Loan',
+        description: 'Get a secured loan that allows you to avail funds by providing an immovable asset, such as a house or commercial property, as collateral to the lender.',
+        icon: <House className="w-8 h-8 text-brown-600" />, // Use House icon with brown color
+        features: ['Property Collateral', 'Competitive Rates', 'Flexible Terms']
+    },
+    {
+        title: 'Other Services',
+        description: 'Other Loans like SMEs, Top Up Loans, Plot Loans, Home Loan For Pensioners, Flexipay Home Loan, Rural Housing Loan, Pradhan Mantri Awas Yojana and more.',
+        icon: <Package className="w-8 h-8 text-brown-600" />, // Update color to brown
+        features: ['SME Loans', 'Rural Housing', 'PMAY Schemes']
+    }
 ];
 
 const Services = () => {
     return (
-        <section className="py-12 bg-gray-50 rounded-lg shadow-md">
+        <section className="py-12 bg-white">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center mb-3">
+
+                    <p className="text-lg text-brown-600">We Are Providing Top Services With Excellent Performance</p>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div 
                             key={index} 
-                            className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                            className="bg-brown-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
                         >
                             <div className="flex items-center mb-4">
                                 <div className="p-2 bg-brown-50 rounded-lg">
                                     {service.icon}
                                 </div>
                             </div>
-                            <h3 className="text-xl font-semibold mb-3 text-brown-700">
+                            <h3 className="text-xl font-semibold mb-3 text-brown-900">
                                 {service.title}
                             </h3>
-                            <p className="text-gray-600 mb-4">
+                            <p className="text-brown-600 mb-4">
                                 {service.description}
                             </p>
                             <ul className="space-y-2">
                                 {service.features.map((feature, idx) => (
                                     <li 
                                         key={idx}
-                                        className="flex items-center text-sm text-gray-600"
+                                        className="flex items-center text-sm text-brown-600"
                                     >
                                         <span className="w-1.5 h-1.5 bg-brown-600 rounded-full mr-2"></span>
                                         {feature}
