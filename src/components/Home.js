@@ -5,6 +5,7 @@ import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
 import Services from './Services';
 import Stats from './Stats'; // Import the Stats component
+import Reviews from './Reviews'; // Import the Reviews component
 import logo from '../assets/logo.jpeg';
 
 const Home = () => {
@@ -107,6 +108,23 @@ const Home = () => {
                         </div>
                         <div className="bg-gray-50 rounded-2xl p-8 lg:p-12 shadow-xl mb-3">
                             <Stats />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Reviews Section */}
+            <section id="reviews" className="py-24 bg-gray-50">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl sm:text-5xl font-bold text-brown-700 mb-4">
+                                Client Success Stories
+                            </h2>
+                            <div className="w-24 h-1 bg-brown-700 mx-auto rounded-full"></div>
+                        </div>
+                        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <Reviews />
                         </div>
                     </div>
                 </div>
