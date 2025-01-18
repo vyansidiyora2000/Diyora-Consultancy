@@ -3,6 +3,8 @@ import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Linkedin } from 'lucide-
 
 const ContactInfo = () => {
     return (
+        <div>
+        
         <div className="bg-brown-50 shadow-lg rounded-xl p-8 space-y-6">
             <h2 className="text-2xl font-bold text-brown-800">Contact Information</h2>
             
@@ -54,6 +56,7 @@ const ContactInfo = () => {
                     </a>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
