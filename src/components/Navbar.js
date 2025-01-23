@@ -14,10 +14,12 @@ const Navbar = () => {
       name: 'Services',
       path: '/services',
       dropdownItems: [
-        { name: 'Financial Planning', path: '/services#financial' },
-        { name: 'Investment Advisory', path: '/services#investment' },
-        { name: 'Tax Consulting', path: '/services#tax' },
-        { name: 'Retirement Solutions', path: '/services#retirement' }
+        { name: 'Education Loan', path: '/education-loan' },
+        { name: 'Home Loan', path: '/home-loan' },
+        { name: 'Business Loan', path: '/business-loan' },
+        { name: 'Personal Loan', path: '/personal-loan' },
+        { name: 'Mortgage Loan', path: '/mortgage-loan' },
+        { name: 'Other Services', path: '/other-services' }
       ]
     },
     { name: 'Contact', path: '/contact' }
