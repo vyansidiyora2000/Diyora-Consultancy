@@ -7,6 +7,8 @@ import Services from './Services';
 import Stats from './Stats'; // Import the Stats component
 import Reviews from './Reviews'; // Import the Reviews component
 import logo from '../assets/logo.jpeg';
+import Swiper from 'swiper';
+import SwiperComponent from './SwiperComponent';
 
 const Home = () => {
     return (
@@ -14,10 +16,12 @@ const Home = () => {
             <Navbar />
             
             {/* Hero Section with Logo and Info */}
-            <div className="bg-white">
+            <div className="bg-white pt-10  ">
                 <div className="container mx-auto px-4 pt-16">
                     <div className="flex flex-col items-center max-w-7xl mx-auto">
-                        <img 
+                       
+                        <SwiperComponent />
+                         <img 
                             src={logo}
                             alt="Diyora Consultancy Logo" 
                             className="h-64 w-auto object-contain mb-2"
